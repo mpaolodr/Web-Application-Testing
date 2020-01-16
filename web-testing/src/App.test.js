@@ -9,11 +9,23 @@ test("renders learn react link", () => {
 describe("Count displays", () => {
   test("ball count display", () => {
     const { getByTestId } = render(<App />);
-    console.log(getByTestId("ball-count"));
+    getByTestId("ball-count");
   });
 
   test("strike count display", () => {
     const { getByTestId } = render(<App />);
     getByTestId("strike-count");
+  });
+});
+
+describe("Label for counts", () => {
+  test("Label for ball", () => {
+    const { getByTestId } = render(<App />);
+    getByTestId("label-ball");
+  });
+
+  test("Label for strike", () => {
+    const { getByTestId } = render(<App />);
+    getByTestId("label-strike");
   });
 });

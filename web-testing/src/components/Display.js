@@ -14,7 +14,9 @@ const Display = props => {
               {props.display.ball}
             </h2>
           </div>
-          <h2 className="info-name">BALL</h2>
+          <h2 className="info-name" data-testid="label-ball">
+            BALL
+          </h2>
         </div>
 
         <div className="info-container">
@@ -23,7 +25,9 @@ const Display = props => {
               {props.display.strike}
             </h2>
           </div>
-          <h2 className="info-name">STRIKE</h2>
+          <h2 className="info-name" data-testid="label-strike">
+            STRIKE
+          </h2>
         </div>
       </div>
     </div>
