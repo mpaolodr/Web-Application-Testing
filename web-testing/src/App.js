@@ -1,6 +1,10 @@
 import React from "react";
 import "./App.css";
 
+//components
+import Display from "./components/Display";
+import Dashboard from "./components/Dashboard";
+
 class App extends React.Component {
   constructor() {
     super();
@@ -64,7 +68,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h2>components here</h2>
+        <Display display={this.state} />
+        <Dashboard
+          addBall={this.addBall}
+          hit={this.hit}
+          addStrike={this.addStrike}
+          foul={this.foul}
+        />
       </div>
     );
   }
