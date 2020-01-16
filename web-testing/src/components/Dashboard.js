@@ -8,7 +8,9 @@ const Dashboard = props => {
       </button>
       <button onClick={props.foul}>Foul</button>
       <button onClick={props.hit}>Hit</button>
-      <button onClick={props.addStrike}>Strike</button>
+      <button onClick={props.addStrike} data-testid="strike-btn">
+        Strike
+      </button>
     </div>
   );
 };

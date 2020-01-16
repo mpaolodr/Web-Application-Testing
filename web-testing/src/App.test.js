@@ -29,3 +29,25 @@ describe("Label for counts", () => {
     getByTestId("label-strike");
   });
 });
+
+describe("Buttons are rendering", () => {
+  test("Add Ball Btn", () => {
+    const { getByTestId } = render(<App />);
+    getByTestId("ball-btn");
+  });
+
+  test("Add Strike Btn", () => {
+    const { getByTestId } = render(<App />);
+    getByTestId("strike-btn");
+  });
+
+  test("Foul Btn", () => {
+    const { getByText } = render(<App />);
+    getByText(/foul/i);
+  });
+
+  test("Hit Btn", () => {
+    const { getByText } = render(<App />);
+    getByText(/hit/i);
+  });
+});
