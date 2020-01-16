@@ -10,14 +10,18 @@ const Display = props => {
       <div className="info">
         <div className="info-container">
           <div className="ball">
-            <h2 className="count">{props.display.ball}</h2>
+            <h2 className="count" data-testid="ball-count">
+              {props.display.ball}
+            </h2>
           </div>
           <h2 className="info-name">BALL</h2>
         </div>
 
         <div className="info-container">
           <div className="strike">
-            <h2 className="count">{props.display.strike}</h2>
+            <h2 className="count" data-testid="strike-count">
+              {props.display.strike}
+            </h2>
           </div>
           <h2 className="info-name">STRIKE</h2>
         </div>
