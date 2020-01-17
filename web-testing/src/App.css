@@ -12,16 +12,15 @@ html {
   border: 2px solid black;
   width: 100%;
   height: 100vh;
+  padding: 20px;
 }
 
 .display-container {
-  border: 2px solid black;
   height: 70vh;
   width: 100%;
 }
 
 .scoreboard {
-  border: 2px solid blue;
   width: 100%;
   height: 60%;
   display: flex;
@@ -37,7 +36,6 @@ html {
 }
 
 .info {
-  border: 2px solid blue;
   width: 100%;
   height: 40%;
   display: flex;
@@ -46,7 +44,6 @@ html {
 }
 
 .info-container {
-  border: 2px solid black;
   width: 15%;
   height: 100px;
 }
@@ -73,7 +70,6 @@ html {
 }
 
 .btn-container {
-  border: 2px solid blue;
   height: 30vh;
   display: flex;
   justify-content: space-around;
