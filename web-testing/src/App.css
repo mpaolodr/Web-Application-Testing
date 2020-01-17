@@ -9,15 +9,18 @@ html {
 }
 
 .App {
-  border: 2px solid black;
   width: 100%;
   height: 100vh;
   padding: 20px;
 }
 
 .display-container {
+  margin: 0 auto;
   height: 70vh;
-  width: 100%;
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  background: darkgreen;
 }
 
 .scoreboard {
@@ -30,9 +33,36 @@ html {
 
 .home,
 .away {
-  border: 2px solid black;
-  width: 15%;
+  width: 20%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: brown;
+}
+
+.home-score,
+.away-score {
+  height: 90%;
+  width: 90%;
+  border: 2px solid black;
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+h1 {
+  font-size: 20rem;
+  color: white;
+}
+
+.team-name {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
 }
 
 .info {
@@ -49,24 +79,26 @@ html {
 }
 
 .ball,
-.foul,
-.hit,
 .strike {
-  border: 2px solid blue;
+  border-radius: 50px;
   width: 100%;
   height: 50px;
+  border: 5px solid brown;
+  background: black;
 }
 
 .count {
   font-size: 3rem;
   text-align: center;
-  color: black;
+  color: red;
+  letter-spacing: 5px;
 }
 
 .info-name {
   text-align: center;
   font-size: 3rem;
   line-height: 4rem;
+  color: white;
 }
 
 .btn-container {
@@ -74,9 +106,16 @@ html {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 button {
+  font-size: 2rem;
+  color: white;
+  background: darkgreen;
   padding: 10px;
-  width: 100px;
+  border-radius: 10px;
+  width: 120px;
+  height: 50px;
 }
